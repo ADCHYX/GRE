@@ -1,0 +1,2 @@
+./microbench --keys_file=../data/datasets/osm --keys_file_type=binary --table_size=-1 --init_table_ratio=0.5 --insert_file --insert_file_path=../data/datasets/libio --read=0 --insert=1 --operations_num=100000000 --output_path=./supp/tmp.txt --memory=1 --thread_num=1 --index="alexol"
+./microbench --keys_file=../data/datasets/libio --keys_file_type=binary --table_size=-1 --init_table_ratio=0.5 --insert_file --insert_file_path=../data/datasets/osm --read=0 --insert=1 --operations_num=100000000 --output_path=./supp/tmp.txt --memory=1 --thread_num=1 --index="alexol"
