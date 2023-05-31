@@ -234,6 +234,7 @@ T *get_search_keys_zipf(T array[], int num_keys, int num_searches, size_t *seed 
 
 template<typename T>
 T *unique_data(T *key1, size_t &size1, T *key2, size_t &size2) {
+    std::cout<<"unique data"<<std::endl;
     size_t ptr1 = 0;
     size_t ptr2 = 0;
 
@@ -241,6 +242,7 @@ T *unique_data(T *key1, size_t &size1, T *key2, size_t &size2) {
     size1 = std::unique(key1, key1 + size1) - key1;
     std::sort(key2, key2 + size2);
     size2 = std::unique(key2, key2 + size2) - key2;
+    std::cout<<size1<<" "<<size2<<std::endl;
 
     size_t result = 0;
 
